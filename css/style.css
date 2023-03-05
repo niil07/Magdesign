@@ -1,0 +1,137 @@
+/**************
+global section css
+******************/
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+a, a:hover{
+	text-decoration: none !important;
+}
+
+
+ul{
+	margin: 0px;
+	padding: 0px !important;
+}
+
+ul li{
+	list-style: none !important;
+}
+
+body{
+	font-family: 'Poppins', sans-serif !important;
+	z-index: -1;
+}
+
+
+/*************************
+Header section css
+**************************/
+
+header{width: 100%;padding: 20px 0px;border-bottom: 1px solid rgba(0,0,0,.1);}
+header #search{position: relative;}
+header #search input{color: #ccc;height: 36px;width: 275px;border-radius: 35px;padding-left: 35px;border: 1px solid #ced4da;font-size: 14px;}
+header #search input:focus{outline: 1px solid black;}
+header #search i{position: absolute;left: 12px;top: 50%;transform: translateY(-50%);color: #ccc; font-size: 14px;}
+header .logo{font-size: 20px;color: #000;font-weight: 700;text-transform: uppercase;line-height: 42px;}
+header .logo:hover{color: #000}
+header .header-icon i{font-size: 14px;color: #000;margin: 0px 8px;line-height: 42px;}
+header .h-menu span{height: 2px;width: 24px;color: #000;background: #000;display: inline-block;position: relative;line-height: 42px;}
+header .h-menu span::before{position: absolute;content: '';height: 2px;width: 24px;color: #000;background: #000;display: block;top: -8px;transition: 0.2s;}
+header .h-menu span::after{position: absolute;content: '';height: 2px;width: 24px;color: #000;background: #000;display: block;top:  8px;transition: 0.2s;}
+header .h-menu:hover span::before{transform: translateY(2px);transition: 0.2s;}
+header .h-menu:hover span::after{transform: translateY(-2px);transition: 0.2s;}
+
+
+/*************************
+slidebar section css
+**************************/
+
+#slidebar{z-index: 99;position: absolute;background: white;top: 0px;bottom: 0px;right: 0px;width: 0px;padding: 0px;transition: 0.4s;}
+#slidebar .menubar ul li{margin-bottom: 8px;font-size: 14px;}
+#slidebar .menubar ul li a{color: #000;transition: 0.2s;}
+#slidebar .menubar ul li a:hover{color: #f79918;transition: 0.2s;}
+.extra{padding: 24px 42px !important;width: 300px !important;box-shadow: -10px 0 20px -10px rgb(0 0 0 / 10%);transition: 0.4s;}
+
+
+
+/*************************
+Banner section css
+**************************/
+
+#banner{width: 100%;}
+#banner .title{font-size: 40px;font-weight: 700;color: #000;}
+.meta-tags .cat-name a{color: #222;font-weight: 600;}
+.thumbnail{border-radius: 8px;}
+#banner .b-desc{padding: 46px 32px;}
+.meta-tags a{color: #222;font-weight: 600;font-size: 14px;}
+.meta-tags span{color: #999;font-weight: 400;font-size: 14px;}
+#banner .b-desc h2 a{color: #222;font-weight: 700;font-size: 40px;margin-top: 12px;}
+#banner .b-desc p{color: #888888;font-size: 14px;}
+.author .a-desc h6{margin-bottom: 0px !important;}
+.author .a-desc h6 a{color: #000; font-weight: 700;font-size: 14px;}
+.author .a-desc p a{color: #888; font-weight: 400;font-size: 13px;}
+.author .a-desc{vertical-align: top;margin-left: 8px;}
+#banner .owl-nav{display: none;}
+#banner .owl-theme .owl-dots .owl-dot.active span{margin-top: 36px;background: #F79918;}
+#banner .owl-theme .owl-dots .owl-dot:hover span{background: #F79918 !important;}
+
+/*************************
+All post section css
+**************************/
+#all-posts{width: 100%;padding: 100px 0px;}
+#all-posts .p-item{margin: 0px 12px 15px;}
+.posts .p-item h4{font-size: 18px;color: #222;font-weight: 700;margin: 6px 0px 12px;}
+.posts .p-item h4 a{color: #222;}
+.posts .p-item p{color: #888;font-weight: 400;font-size: 14px;}
+.posts .p-item img{border-radius: 8px;margin-bottom: 24px;}
+
+
+/*************************
+Individual post section css
+**************************/
+
+#individual-posts{width: 100%;padding: 100px 0px;}
+#individual-posts h3{font-size: 24px;color: #000;font-weight: 700;margin-bottom: 36px;}
+#individual-posts .i-item{display: flex;margin-left: 0px !important;margin-top: 24px !important;}
+#individual-posts .i-item h4{font-size: 20px;}
+.i-item img{border-radius: 8px;margin-bottom: 0px !important;}
+#individual-posts .i-desc{margin-left: 14px;}
+
+/*************************
+Subscribe section css
+**************************/
+
+#subscribe{width: 100%;padding: 50px 0px;background: #F8F9FA;}
+#subscribe .sub-item h3{font-size: 24px;color: #000;font-weight: 700;}
+#subscribe .sub-item input{padding: 0px 20px;border: #ccc;border-radius: 7px;height: 50px;width: 65%;border: 1px solid #ccc;}
+#subscribe .sub-item input:focus{outline: 1px solid black;}
+#subscribe .sub-item button{background: #F79918;border: 2px solid transparent;padding: 12px 120px;border-radius: 30px;margin-left: 12px;transition: 0.4s;}
+#subscribe .sub-item button a{text-transform: uppercase;color: white !important;font-size: 16px;font-weight: 500;letter-spacing: 0.1rem;}
+#subscribe .sub-item button:hover{background: white;box-shadow: 0 15px 30px 0 rgb(0 0 0 / 20%);transition: 0.4s;}
+#subscribe .sub-item button:hover a{color: #F79918 !important;}
+
+
+/*************************
+Footer section css
+**************************/
+
+footer{width: 100%;padding: 80px 0px;}
+footer .f-icon i{color: #000;background: #ccc;width: 40px;height: 40px;line-height: 40px;border-radius: 40%;margin-right: 6px;transition: 0.3s;}
+footer .f-icon i:hover{color: #ffffff;background-color: #F79918;transition: 0.3s;}
+footer .copyright p{font-size: 14px;color: #888;font-weight: 400;margin: 24px 0px;}
+footer .copyright span{font-size: 14px;color: #888;font-weight: 400;}
+footer .copyright a{color: #888;position: relative;}
+footer .copyright a::before{position: absolute;content: '';height: 3px; width: 0%;background: #F79918;bottom: -4px;left: 0px;transition: 0.4s;}
+footer .copyright a:hover::before{width: 100%;transition: 0.4s;}
+
+
+
+
+
+
+
+
+
